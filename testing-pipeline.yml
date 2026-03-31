@@ -31,7 +31,7 @@ stages:
       inputs:
         categories: 'IaC'
         outputFormat: 'sarif'
-        tools: 'binskim,templateanalyzer'
+        tools: 'templateanalyzer'
 
 
 - stage: BicepValidation

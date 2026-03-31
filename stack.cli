@@ -11,6 +11,13 @@ az stack sub create `
 
 
 
+az stack group create `
+  --name 'sampledeployment' `
+  --template-file 'infra/main.bicep' `
+  --resource-group 'PropertyManagerRG' `
+    --deny-settings-mode 'none' `
+  --yes `
+  --action-on-unmanage deleteAll
 
 
 
